@@ -23,17 +23,32 @@ export default {
       todos: [
         {
            id: 1,
-           title: "Todo One",
+           title: "Read Books",
            completed: false
         },
         {
            id: 2,
-           title: "Todo Two",
-           completed: true
+           title: "Set Alaram",
+           completed: false
         },
         {
            id: 3,
-           title: "Todo Three",
+           title: "Meeting with Client",
+           completed: false
+        },
+        {
+           id: 4,
+           title: "Watch movie",
+           completed: false
+        },
+        {
+           id: 5,
+           title: "Walk",
+           completed: false
+        },
+        {
+           id: 3,
+           title: "sleep",
            completed: false
         }
       ]
@@ -58,6 +73,7 @@ export default {
     padding: 0;
   }
   body{
+    padding: 20px 30%;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
   }

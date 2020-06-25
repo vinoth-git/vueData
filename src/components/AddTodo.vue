@@ -1,8 +1,8 @@
 <template>
     <div>
         <form @submit="addTodo">
-            <input type="text" v-model="title" name="title" placeholder="Add ToDo">
-            <input type="submit" value="Submit" class="btn">
+            <input type="text" v-model="title"  name="title" placeholder="Add ToDo" :class="[title.length<3 ? 'red' : 'green']">
+            <input type="submit" v-on:keyup.enter="addTodo" value="Submit" class="btn" :disabled="title.length<2">
         </form>
     </div>
 </template>
@@ -45,6 +45,12 @@ export default {
     }
     input[type="submit"] {
         flex: 2;
+    }
+    .red{
+        border: 1px solid red;
+    }
+    .green{
+        border: 1px solid green;
     }
 </style>
 
